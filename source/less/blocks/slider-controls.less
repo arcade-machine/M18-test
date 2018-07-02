@@ -1,0 +1,28 @@
+.slider-controls {
+  width: 3.98vw;
+  max-width: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-controls__item {
+  cursor: pointer;
+}
+
+.slider-controls__icon {
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    transform: scaleY(0.8);
+  }
+
+  &:active {
+    transform: scaleY(0.7);
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider-controls {
+    width: 75px;
+  }
+}

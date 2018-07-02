@@ -13,22 +13,22 @@
         <h1 class="main-content__header">Ремонт квартир в типовых домах </h1>
         <h2 class="main-content__info">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</h2>
         <div class="main-content__wrapper">
-          <a href="#" class="main-content__button button">Узнайте о запуске первым</a>
+          <a href="#form" class="main-content__button button">Узнайте о запуске первым</a>
           <p class="main-content__launch-date">Старт весной 2016</p>
         </div>
-        <p class="main-content__slide-down"><img class="main-content__icon" src="img/icons/icon--slide-down.svg" width="42" height="32">Листайте вниз, <br/>чтобы ничего не упустить</p>
+        <a class="main-content__slide-down" href="#about-us"><img class="main-content__icon" src="img/icons/icon--slide-down.svg" width="42" height="32">Листайте вниз, <br/>чтобы ничего не упустить</a>
       </div>
       <div class="main-page__video video">
-        <a href="#" class="video__contacts"><img class="video__icon" src="img/icons/icon--phone.svg" width="25" height="25">Контакты</a>
+        <a href="#contacts" class="video__contacts"><img class="video__icon" src="img/icons/icon--phone.svg" width="25" height="25">Контакты</a>
         <div class="video__play play">
           <div class="play__button"><img class="play__play-button" src="img/icons/icon--play.svg" width="114" height="131"></div>
           <p class="play__info">Смотреть видео</p>
         </div>
       </div>
     </section>
-    <section class="about_us">
+    <section class="about-us" id="about-us">
       <h2 class="about-us__header">FIX Ремонт — это легко</h2>
-      <p class="about-us__">Готовые проекты, проверенные материалы и умелые руки</p>
+      <p class="about-us__info">Готовые проекты, проверенные материалы и умелые руки</p>
       <ul class="about-us__advantages advantages">
         <li class="advantages__item">
           <h3 class="advantages__header">Опытная команда</h3>
@@ -44,7 +44,7 @@
         </li>
         <li class="advantages__item advantages__item--work-time">
           <h3 class="advantages__header advantages__header--work-time">Срок работ</h3>
-          <p class="advantages__content advantages__content--work-time">Три месяца</p>
+          <p class="advantages__content advantages__content--work-time">3 месяца</p>
         </li>
       </ul>
     </section>
@@ -57,7 +57,7 @@
           <p class="slider__content">Кухня, выполненная в классическом стиле</p>
         </li>
         <li class="slider__item slider__item--scandinavian slider__item--current">
-          <img class="slider__image slider__image--scandinavian">
+          <img class="slider__image slider__image--scandinavian" src="img/slider--two.png" width="752" height="501">
           <p class="slider__content">Кафельная плитка в ванной комнате в скандинавском стиле</p>
         </li>
         <li class="slider__item slider__item--eco">
@@ -74,53 +74,76 @@
         </label>
       </div>
     </section>
-    <form class="main-form">
+    <form class="main-form" id="form">
       <fieldset class="main-form__content">
         <legend class="main-form__header">Узнайте о запуске сервиса первым</legend>
+        <div class="main-form__popup popup hidden">
+          <img class="popup__check" src="img/icons/icon--check.svg" width="195" height="128">
+          <p class="popup__content">Спасибо! Мы будем держать вас в курсе обновлений</p>
+        </div>
         <p class="main-form__promo"><img class="main-form__icon" src="img/icons/icon--door.svg" width="45" height="69">Первым 10 клиентам стальная входная дверь в подарок</p>
-        <input class="main-form__input main-form__input--name" type="text" placeholder="Имя и фамилия*">
-        <input class="main-form__input main-form__input--email" type="email" placeholder="E-mail адрес*">
-        <input class="main-form__input main-form__input--phone" type="tel" placeholder="Телефон">
+        <fieldset class="main-form__fieldset">
+          <legend class="main-form__legend main-form__legend--name hidden">Имя и фамилия*</legend>
+          <input class="main-form__input main-form__input--name" type="text" placeholder="Имя и фамилия*">
+        </fieldset>
+        <fieldset class="main-form__fieldset">
+          <legend class="main-form__legend hidden">E-mail адрес*</legend>
+          <input class="main-form__input main-form__input--email" type="email" placeholder="E-mail адрес*">
+        </fieldset>
+        <fieldset class="main-form__fieldset">
+          <legend class="main-form__legend hidden">Телефон</legend>
+          <input class="main-form__input main-form__input--phone" type="tel" placeholder="Телефон">
+        </fieldset>
         <button class="main-form__submit button" type="submit">Подписаться</button>
         <p class="main-form__requirement">* Обязательные для заполнения поля</p>
         <a class="main-form__privacy" href="#">Политика конфиденциальности</a>
       </fieldset>
     </form>
-    <footer class="main-footer">
+    <footer class="main-footer" id="contacts">
       <ul class="main-footer__social social">
         <li class="social__item social__item--facebook">
-          <img class="social__icon social__icon--facebook" src="img/icons/icon--fb.svg" width="12" height="23">
+          <a class="social__link" href="https://www.facebook.com/">
+            <p class="visually-hidden">Мы в фейсбуке</p>
+            <img class="social__icon social__icon--facebook" src="img/icons/icon--fb.svg" width="12" height="23">
+          </a>
         </li>
         <li class="social__item social__item--vk">
-          <img class="social__icon social__icon--vk" src="img/icons/icon--vk.svg" width="29" height="17">
+          <a class="social__link" href="http://vk.com">
+            <p class="visually-hidden">Мы Вконтакте</p>
+            <img class="social__icon social__icon--vk" src="img/icons/icon--vk.svg" width="29" height="17">
+          </a>
         </li>
         <li class="social__item social__item--instagram">
-          <img class="social__icon social__icon--instagram" src="img/icons/icon--inst.svg" width="23" height="23">
+          <a class="social__link" href="http://instagram.com/">
+            <p class="visually-hidden">Мы в инстаграме</p>
+            <img class="social__icon social__icon--instagram" src="img/icons/icon--inst.svg" width="23" height="23">
+          </a>
         </li>
       </ul>
       <div class="main-footer__follow-us follow-us">
         <p class="follow-us__header">Следите за нашим развитием</p>
-        <p class="follo-us__content">Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь с нашими проектами и тем, что нас вдохновляет</p>
+        <p class="follow-us__content">Подпишитесь на наши аккаунты в соц. сетях, знакомьтесь<br> с нашими проектами и тем, что нас вдохновляет</p>
       </div>
       <ul class="main-footer__contacts contacts">
         <li class="contacts__item contacts__item--phone">
-          <p class="contacts__content">
+          <a class="contacts__content" href="tel:+7-812-903-54-45">
             <img class="contacts__icon contacts__icon--phone" src="img/icons/icon--phone.svg" width="25" height="25">
             +7 (812) 903-54-45
-          </p>
+          </a>
         </li>
         <li class="contacts__item contacts__item--address">
-          <p class="contacts__content">Ул. Галерная, д 55,<br><span class="contacts__city">Санкт-Петербург</span></p>
+          <a class="contacts__content">Ул. Галерная, д 55,<br><span class="contacts__city">Санкт-Петербург</span></a>
         </li>
         <li class="contacts__item contacts__item--email">
-          <p class="contacts__content">
+          <a class="contacts__content contacts__content--email" href="mailto:9035445@gmail.com">
             <img class="contacts__icon contacts__icon--email" src="img/icons/icon--mail.svg" width="31" height="21">
             9035445@gmail.com
-          </p>
+          </a>
         </li>
       </ul>
       <p class="main-footer__copyright">© FIX Ремонт, 2016</p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

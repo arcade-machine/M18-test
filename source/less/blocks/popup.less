@@ -1,0 +1,29 @@
+.popup {
+  width: 96%;
+  height: 87%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 2;
+  animation: fadeInFromNone 0.5s ease-out;
+}
+
+.popup__open {
+  display: flex;
+}
+
+.popup__check {
+  margin-bottom: 30px;
+}
+
+.popup__content {
+  width: 30%;
+  font-family: "Muller-regular", Arial, serif;
+  .fluid-type(font-size, 600px, 1880px, 8px, 16px);
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}

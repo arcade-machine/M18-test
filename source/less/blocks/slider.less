@@ -1,0 +1,39 @@
+.slider {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+
+  &--current {
+    display: flex;
+  }
+}
+
+.slider__image {
+  margin-right: 1.06vw;
+}
+
+.slider__content {
+  padding: 0;
+  margin: 0;
+  width: 14%;
+  font-family: "Muller-regular", Arial, serif;
+  .fluid-type(font-size, 600px, 1880px, 7px, 13px);
+  line-height: 20px;
+  color: #666666;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 0;
+  right: 7%;
+}
+
+@media (min-width: @desktop) {
+  .slider__image {
+    margin-right: 20px;
+  }
+}
