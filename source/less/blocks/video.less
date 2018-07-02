@@ -1,0 +1,53 @@
+.video {
+  width: 52.55vw;
+  max-width: 1400px;
+  height: 100vh;
+  padding-top: 4.56vh;
+  padding-right: 4.89vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+  background-image: url("../img/main-image_1.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.video__contacts {
+  padding: 0;
+  padding-left: 1.59vw;
+  margin-left: auto;
+  position: relative;
+  font-family: "Muller-regular", Arial, serif;
+  .fluid-type(font-size, 600px, 1880px, 10px, 21px);
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+
+  &:visited {
+    color: #000000;
+  }
+
+  &:hover {
+    color: #f9572e;
+  }
+}
+
+.video__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: @desktop) {
+  .video {
+    padding-top: 44px;
+    padding-right: 92px;
+  }
+
+  .video__contacts {
+    padding-left: 30px;
+  }
+}

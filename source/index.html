@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
+  <div class="main-container">
     <section class="main-page">
       <div class="main-page__content main-content">
-        <img class="main-header__logo" src="img/icons/icon--logo.svg" width="200" height="50" alt="Fix ремонт">
+        <img class="main-content__logo" src="img/icons/icon--logo.svg" width="200" height="50" alt="Fix ремонт">
         <h1 class="main-content__header">Ремонт квартир в типовых домах </h1>
         <h2 class="main-content__info">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</h2>
-        <a href="#" class="main-content__button button">Узнайте о запуске первым</a>
-        <p class="main-content__launch-date">Старт весной 2016</p>
-        <p class="main-content__slide-down"><img src="img/icons/icon--slide-down.svg" width="42" height="32">Листайте вниз, <br/>чтобы ничего не упустить</p>
+        <div class="main-content__wrapper">
+          <a href="#" class="main-content__button button">Узнайте о запуске первым</a>
+          <p class="main-content__launch-date">Старт весной 2016</p>
+        </div>
+        <p class="main-content__slide-down"><img class="main-content__icon" src="img/icons/icon--slide-down.svg" width="42" height="32">Листайте вниз, <br/>чтобы ничего не упустить</p>
       </div>
       <div class="main-page__video video">
-        <a href="#" class="main-header__contacts"><img src="img/icons/icon--phone.svg" width="25" height="25">Контакты</a>
+        <a href="#" class="video__contacts"><img class="video__icon" src="img/icons/icon--phone.svg" width="25" height="25">Контакты</a>
         <div class="video__play play">
           <div class="play__button"><img class="play__play-button" src="img/icons/icon--play.svg" width="114" height="131"></div>
           <p class="play__info">Смотреть видео</p>
@@ -78,7 +81,7 @@
         <input class="main-form__input main-form__input--name" type="text" placeholder="Имя и фамилия*">
         <input class="main-form__input main-form__input--email" type="email" placeholder="E-mail адрес*">
         <input class="main-form__input main-form__input--phone" type="tel" placeholder="Телефон">
-        <button class="main-form__submit" type="submit">Подписаться</button>
+        <button class="main-form__submit button" type="submit">Подписаться</button>
         <p class="main-form__requirement">* Обязательные для заполнения поля</p>
         <a class="main-form__privacy" href="#">Политика конфиденциальности</a>
       </fieldset>
@@ -118,5 +121,6 @@
       </ul>
       <p class="main-footer__copyright">© FIX Ремонт, 2016</p>
     </footer>
+  </div>
   </body>
 </html>

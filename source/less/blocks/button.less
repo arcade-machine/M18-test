@@ -1,0 +1,30 @@
+.button {
+  padding: 0.9vw 1.91vw;
+  font-family: "Muller-medium", Arial, serif;
+  .fluid-type(font-size, 600px, 1880px, 8px, 16px);
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #f9572e;
+  border-radius: 1.38vw;
+  box-shadow: 0px 0px 35px 0px rgba(249,87,46,1);
+
+  &:visited {
+    color: #ffffff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: @desktop) {
+  .button {
+    padding: 17px 36px;
+    border-radius: 26px;
+  }
+}

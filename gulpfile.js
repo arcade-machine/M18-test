@@ -13,7 +13,7 @@ var minicss = require("gulp-csso");
 var rename = require("gulp-rename");
 
 gulp.task("less", function () {
-    return gulp.src("source/less/styles.scss")
+    return gulp.src("source/less/styles.less")
         .pipe(plumber())
         .pipe(less())
         .pipe(postcss([
@@ -53,7 +53,7 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("watch", ["browserSync", "less"], function () {
-    gulp.watch("source/less/**/*.scss", ["less"]);
+    gulp.watch("source/less/**/*.less", ["less"]);
     gulp.watch("source/*.html", browserSync.reload);
     gulp.watch("source/js/*.js", browserSync.reload);
 });
