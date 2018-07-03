@@ -1,9 +1,13 @@
 .interior {
+  position: relative;
+  margin-bottom: 13.48vh;
+  overflow: hidden;
+}
+
+.interior__wrapper {
   width: 52.18vw;
   max-width: 981px;
   margin: 0 auto;
-  margin-bottom: 13.48vh;
-  position: relative;
 }
 
 .interior__header {
@@ -28,7 +32,7 @@
   color: #33B5A3;
 }
 
-@media (min-width: @desktop) {
+@media (min-width: @desktopHeight) {
   .interior {
     margin-bottom: 130px;
   }

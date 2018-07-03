@@ -24,7 +24,7 @@
   width: 30%;
   padding: 0;
   padding-top: 1.55vh;
-  padding-left: 3.19vw;
+  padding-left: 60px;
   margin: 0 auto;
   margin-bottom: 6.22vh;
   position: relative;
@@ -43,7 +43,14 @@
 .main-form__fieldset {
   width: 60%;
   margin: 0 auto;
-  border: none;
+  margin-bottom: 3.11vh;
+  height: 6.22vh;
+  max-height: 68px;
+  padding: 2.07vh 1.59vw;
+  border: 0.05vw solid #ebebeb;
+  border-radius: 0.26vw;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .main-form__legend {
@@ -53,25 +60,17 @@
   margin: 0;
   font-family: "Muller-regular", Arial, serif;
   .fluid-type(font-size, 600px, 1880px, 7px, 13px);
-  line-height: 10px;
+  line-height: 1px;
   color: #f9572e;
+  background-color: #ffffff;
 }
 
 .main-form__input {
   width: 100%;
-  height: 6.22vh;
-  padding: 2.07vh 1.59vw;
-  margin-bottom: 3.11vh;
-  border: 0.05vw solid #ebebeb;
-  border-radius: 0.26vw;
-  box-sizing: border-box;
+  border: none;
   font-family: "Muller-regular", Arial, serif;
   .fluid-type(font-size, 600px, 1880px, 9px, 18px);
-
-  &:focus {
-    border: 0.05vw solid #f9572e;
-    outline: none;
-  }
+  outline: none;
 
   &::placeholder {
     padding: 0;
@@ -80,10 +79,6 @@
     .fluid-type(font-size, 600px, 1880px, 9px, 18px);
     line-height: 24px;
   }
-}
-
-.main-form__input:focus .main-form__legend{
-  display: block;
 }
 
 .main-form__submit {
@@ -117,31 +112,40 @@
 }
 
 @media (min-width: @desktop) {
+  .main-form__content {
+    border: 4px solid #33b5a3;
+  }
+
+  .main-form__fieldset {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0.05vw solid #ebebeb;
+    border-radius: 0.26vw;
+  }
+}
+
+@media (min-height: @desktopHeight) {
   .main-form {
     margin-bottom: 130px;
   }
 
   .main-form__content {
     padding-bottom: 60px;
-    border: 4px solid #33b5a3;
   }
 
   .main-form__promo {
     padding-top: 15px;
-    padding-left: 60px;
     margin-bottom: 60px;
+  }
+
+  .main-form__fieldset {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .main-form__submit {
     margin-bottom: 20px;
-  }
-
-  .main-form__input {
-    border: 2px solid #ebebeb;
-
-    &:focus {
-      border: 2px solid #f9572e;
-      outline: none;
-    }
   }
 }

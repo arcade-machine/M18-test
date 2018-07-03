@@ -50,7 +50,7 @@
 
 .main-content__slide-down {
   padding: 0;
-  padding-left: 3.19vw;
+  padding-left: 60px;
   margin: 0;
   margin-top: auto;
   font-family: "Muller-medium", Arial, serif;
@@ -77,6 +77,12 @@
 }
 
 @media (min-width: @desktop) {
+  .main-content__button {
+    margin-right: 32px;
+  }
+}
+
+@media (min-height: @desktopHeight) {
   .main-content {
     padding-top: 27px;
     padding-bottom: 30px;
@@ -92,9 +98,5 @@
 
   .main-content__logo {
     margin-bottom: 220px;
-  }
-
-  .main-content__button {
-    margin-right: 32px;
   }
 }

@@ -1,7 +1,8 @@
 .contacts {
-  width: 890px;
+  width: 47.34vw;
+  max-width: 890px;
   padding: 0;
-  padding-bottom: 75px;
+  padding-bottom: 7.78vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -48,4 +49,10 @@
   font-family: "Muller-regular", Arial, serif;
   .fluid-type(font-size, 600px, 1880px, 8px, 16px);
   color: #666666;
+}
+
+@media (min-height: @desktopHeight) {
+  .contacts {
+    padding-bottom: 75px;
+  }
 }

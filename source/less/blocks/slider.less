@@ -1,35 +1,98 @@
 .slider {
+  width: 153%;
+  height: 45.86vh;
+  max-height: 500px;
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+  left: -27%;
+  display: flex;
+  flex-direction: row;
+  transition: all 1s ease-in-out;
 }
 
 .slider__item {
-  display: none;
-
-  &--current {
-    display: flex;
-  }
+  width: 48.77%;
+  margin-right: 1.82vw;
+  display: flex;
 }
 
+
 .slider__image {
+  width: 41.4vw;
+  max-width: 779px;
+  height: auto;
   margin-right: 1.06vw;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  opacity: .6;
+
+  &--classic {
+    background-image: url("../img/slider--one.png");
+  }
+
+  &--scandinavian {
+    background-image: url("../img/slider--two.png");
+  }
+
+  &--eco {
+    background-image: url("../img/slider--three.png");
+  }
 }
 
 .slider__content {
   padding: 0;
   margin: 0;
-  width: 14%;
+  margin-left: auto;
+  width: 15%;
+  display: none;
   font-family: "Muller-regular", Arial, serif;
   .fluid-type(font-size, 600px, 1880px, 7px, 13px);
   line-height: 20px;
   color: #666666;
 }
 
+.slider__item--current .slider__content {
+  display: block;
+}
+
 .slider__controls {
   position: absolute;
   bottom: 0;
-  right: 7%;
+  right: 29%;
+}
+
+.slider-controls__radio-button--slider-one:checked ~ .slider {
+  transform: translateX(51vw);
+}
+
+.slider-controls__radio-button--slider-three:checked ~ .slider {
+  transform: translateX(-51vw);
+}
+
+.slider-controls__radio-button--slider-one:checked ~ .slider .slider__image--classic {
+  opacity: 1;
+}
+
+.slider-controls__radio-button--slider-two:checked ~ .slider .slider__image--scandinavian {
+  opacity: 1;
+}
+
+.slider-controls__radio-button--slider-three:checked ~ .slider .slider__image--eco {
+  opacity: 1;
+}
+
+.slider-controls__radio-button--slider-one:checked ~ .slider .slider__item--classic .slider__content {
+  display: block;
+}
+
+.slider-controls__radio-button--slider-two:checked ~ .slider .slider__item--scandinavian .slider__content {
+  display: block;
+}
+
+.slider-controls__radio-button--slider-three:checked ~ .slider .slider__item--eco .slider__content {
+  display: block;
 }
 
 @media (min-width: @desktop) {

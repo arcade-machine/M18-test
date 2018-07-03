@@ -51,6 +51,16 @@
 }
 
 @media (min-width: @desktop) {
+  .advantages__item {
+    border-top: 4px solid #33b5a3;
+
+    &--work-time {
+      border: 4px solid #33b5a3;
+    }
+  }
+}
+
+@media (min-height: @desktopHeight) {
   .advantages {
     margin-bottom: 100px;
   }
@@ -58,11 +68,9 @@
   .advantages__item {
     padding-top: 35px;
     margin-bottom: 100px;
-    border-top: 4px solid #33b5a3;
 
     &--work-time {
       padding-bottom: 10px;
-      border: 4px solid #33b5a3;
     }
   }
 

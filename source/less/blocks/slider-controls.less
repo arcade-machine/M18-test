@@ -3,9 +3,12 @@
   max-width: 75px;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .slider-controls__item {
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -18,11 +21,5 @@
 
   &:active {
     transform: scaleY(0.7);
-  }
-}
-
-@media (min-width: @desktop) {
-  .slider-controls {
-    width: 75px;
   }
 }
