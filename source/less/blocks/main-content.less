@@ -1,4 +1,5 @@
-.main-content {
+.main-content
+{
   width: 28.83vw;
   padding-top: 2.8vh;
   padding-bottom: 3.11vh;
@@ -7,53 +8,68 @@
   flex-direction: column;
 }
 
-.main-content__logo {
+.main-content__logo
+{
   margin-bottom: 22.82vh;
 }
 
-.main-content__header {
+.main-content__header
+{
   padding: 0;
   margin: 0;
   margin-bottom: 4.66vh;
-  font-family: "Muller-medium", Arial, serif;
+  font-family: "Muller-medium",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 32px, 64px);
   line-height: normal;
 }
 
-.main-content__info {
+.main-content__info
+{
   width: 92%;
   padding: 0;
   margin: 0;
   margin-bottom: 5.7vh;
-  font-family: "Muller-regular", Arial, serif;
+  font-family: "Muller-regular",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 10px, 21px);
   line-height: 30px;
 }
 
-.main-content__wrapper {
+.main-content__wrapper
+{
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.main-content__button {
+.main-content__button
+{
   margin-right: 1.7vw;
 }
 
-.main-content__launch-date {
+.main-content__launch-date
+{
   padding: 0;
   margin: 0;
-  font-family: "Muller-regular", Arial, serif;
+  font-family: "Muller-regular",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 8px, 16px);
   line-height: 24px;
 }
 
-.main-content__slide-down {
+.main-content__slide-down
+{
   padding: 0;
   padding-left: 60px;
   margin: 0;
   margin-top: auto;
-  font-family: "Muller-medium", Arial, serif;
+  font-family: "Muller-medium",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 8px, 16px);
   line-height: 18px;
   color: #f9572e;
@@ -61,7 +77,8 @@
   position: relative;
   cursor: pointer;
 
-  &:hover .main-content__icon {
+  &:hover .main-content__icon
+  {
     transform: scaleX(0.7);
   }
 
@@ -70,33 +87,41 @@
   }
 }
 
-.main-content__icon {
+.main-content__icon
+{
   position: absolute;
   left: 0;
   transition: all .4s ease-in-out;
 }
 
-@media (min-width: @desktop) {
-  .main-content__button {
+@media (min-width: @desktop)
+{
+  .main-content__button
+  {
     margin-right: 32px;
   }
 }
 
-@media (min-height: @desktopHeight) {
-  .main-content {
+@media (min-height: @desktopHeight)
+{
+  .main-content
+  {
     padding-top: 27px;
     padding-bottom: 30px;
   }
 
-  .main-content__header {
+  .main-content__header
+  {
     margin-bottom: 45px;
   }
 
-  .main-content__info {
+  .main-content__info
+  {
     margin-bottom: 55px;
   }
 
-  .main-content__logo {
+  .main-content__logo
+  {
     margin-bottom: 220px;
   }
 }

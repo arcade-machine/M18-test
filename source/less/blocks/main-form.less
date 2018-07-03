@@ -1,4 +1,5 @@
-.main-form {
+.main-form
+{
   width: 52.18vw;
   max-width: 981px;
   margin: 0 auto;
@@ -6,21 +7,26 @@
   position: relative;
 }
 
-.main-form__content {
+.main-form__content
+{
   padding-bottom: 6.22vh;
   display: flex;
   flex-direction: column;
   border: 0.21vw solid #33b5a3;
 }
 
-.main-form__header {
-  font-family: "Muller-medium", Arial, serif;
+.main-form__header
+{
+  font-family: "Muller-medium",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 20px, 40px);
   line-height: 50px;
   text-align: center;
 }
 
-.main-form__promo {
+.main-form__promo
+{
   width: 30%;
   padding: 0;
   padding-top: 1.55vh;
@@ -28,19 +34,23 @@
   margin: 0 auto;
   margin-bottom: 6.22vh;
   position: relative;
-  font-family: "Muller-regular", Arial, serif;
+  font-family: "Muller-regular",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 9px, 16px);
   line-height: 24px;
   text-transform: uppercase;
 }
 
-.main-form__icon {
+.main-form__icon
+{
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.main-form__fieldset {
+.main-form__fieldset
+{
   width: 60%;
   margin: 0 auto;
   margin-bottom: 3.11vh;
@@ -53,70 +63,90 @@
   position: relative;
 }
 
-.main-form__legend {
+.main-form__legend
+{
   padding: 0;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0;
-  font-family: "Muller-regular", Arial, serif;
+  font-family: "Muller-regular",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 7px, 13px);
   line-height: 1px;
   color: #f9572e;
   background-color: #ffffff;
 }
 
-.main-form__input {
+.main-form__input
+{
   width: 100%;
   border: none;
-  font-family: "Muller-regular", Arial, serif;
+  font-family: "Muller-regular",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 9px, 18px);
   outline: none;
 
-  &::placeholder {
+  &::placeholder
+  {
     padding: 0;
     margin: 0;
-    font-family: "Muller-regular", Arial, serif;
+    font-family: "Muller-regular",
+        Arial,
+        serif;
     .fluid-type(font-size, 600px, 1880px, 9px, 18px);
     line-height: 24px;
   }
 }
 
-.main-form__submit {
+.main-form__submit
+{
   margin: 0 auto;
   margin-bottom: 2.07vh;
   border: none;
 }
 
-.main-form__requirement {
+.main-form__requirement
+{
   padding: 0;
   margin: 0;
-  font-family: "Muller-regular", Arial, serif;
+  font-family: "Muller-regular",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 7px, 13px);
   line-height: 20px;
   text-align: center;
 }
 
-.main-form__privacy {
+.main-form__privacy
+{
   padding: 0;
   margin: 0;
-  font-family: "Muller-regular", Arial, serif;
+  font-family: "Muller-regular",
+      Arial,
+      serif;
   .fluid-type(font-size, 600px, 1880px, 7px, 13px);
   line-height: 20px;
   text-align: center;
   color: #f9572e;
   text-decoration: none;
 
-  &:visited {
+  &:visited
+  {
     color: #f9572e;
   }
 }
 
-@media (min-width: @desktop) {
-  .main-form__content {
+@media (min-width: @desktop)
+{
+  .main-form__content
+  {
     border: 4px solid #33b5a3;
   }
 
-  .main-form__fieldset {
+  .main-form__fieldset
+  {
     margin-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -125,27 +155,33 @@
   }
 }
 
-@media (min-height: @desktopHeight) {
-  .main-form {
+@media (min-height: @desktopHeight)
+{
+  .main-form
+  {
     margin-bottom: 130px;
   }
 
-  .main-form__content {
+  .main-form__content
+  {
     padding-bottom: 60px;
   }
 
-  .main-form__promo {
+  .main-form__promo
+  {
     padding-top: 15px;
     margin-bottom: 60px;
   }
 
-  .main-form__fieldset {
+  .main-form__fieldset
+  {
     margin-bottom: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .main-form__submit {
+  .main-form__submit
+  {
     margin-bottom: 20px;
   }
 }
