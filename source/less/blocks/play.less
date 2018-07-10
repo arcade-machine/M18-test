@@ -13,18 +13,25 @@
   margin-bottom: 20px;
   border: 4px solid #f9572e;
   border-radius: 50%;
-}
-
-.play__play-button
-{
-  cursor: pointer;
-  position: absolute;
-  top: 20%;
-  left: 33%;
+  position: relative;
   transition: all .4s ease-in-out;
+
+  &::before {
+    content: "";
+    width: 114px;
+    height: 131px;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    display: block;
+    background-image: url("../img/icons/icon--play.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+  }
 }
 
-.video:hover .play__play-button
+.video:hover .play__button::before
 {
   transform: scale(1.15);
 }

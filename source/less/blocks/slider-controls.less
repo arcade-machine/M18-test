@@ -1,7 +1,8 @@
 .slider-controls
 {
-  width: 3.98vw;
+  width: 4vw;
   max-width: 75px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   z-index: 2;
@@ -9,9 +10,40 @@
 
 .slider-controls__item
 {
+  width: 25px;
+  height: 50px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
+
+  &--left::before {
+    content: "";
+    width: 23px;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("../img/icons/icon--slider-left.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+  }
+
+  &--right::before {
+    content: "";
+    width: 23px;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("../img/icons/icon--slider-right.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+  }
 }
 
 .slider-controls__icon

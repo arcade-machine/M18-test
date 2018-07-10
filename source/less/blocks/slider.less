@@ -9,6 +9,7 @@
   position: relative;
   left: -27%;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   transition: all 1s ease-in-out;
 }
@@ -16,6 +17,7 @@
 .slider__item
 {
   width: 48.77%;
+  max-width: 925px;
   margin-right: 1.82vw;
   display: flex;
 }
@@ -23,29 +25,12 @@
 
 .slider__image
 {
-  width: 41.4vw;
-  max-width: 779px;
+  width: auto;
+  max-width: 100%;
   height: auto;
   margin-right: 1.06vw;
-  background-repeat: no-repeat;
-  background-size: 100%,
-      100%;
+  display: block;
   opacity: .6;
-
-  &--classic
-  {
-    background-image: url("../img/slider--one.png");
-  }
-
-  &--scandinavian
-  {
-    background-image: url("../img/slider--two.png");
-  }
-
-  &--eco
-  {
-    background-image: url("../img/slider--three.png");
-  }
 }
 
 .slider__content

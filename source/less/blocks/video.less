@@ -39,13 +39,18 @@
   {
     color: #f9572e;
   }
-}
 
-.video__icon
-{
-  position: absolute;
-  left: 0;
-  top: 0;
+  &::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("../img/icons/icon--phone.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @desktop)

@@ -17,12 +17,14 @@
 
 .main-form__header
 {
+  margin: 0 auto;
   font-family: "Muller-medium",
       Arial,
       serif;
   .fluid-type(font-size, 600px, 1880px, 20px, 40px);
   line-height: 50px;
   text-align: center;
+  display: block;
 }
 
 .main-form__promo
@@ -40,13 +42,18 @@
   .fluid-type(font-size, 600px, 1880px, 9px, 16px);
   line-height: 24px;
   text-transform: uppercase;
-}
 
-.main-form__icon
-{
-  position: absolute;
-  top: 0;
-  left: 0;
+  &::before {
+    content: "";
+    width: 45px;
+    height: 69px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("../img/icons/icon--door.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .main-form__fieldset
